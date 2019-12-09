@@ -5,7 +5,7 @@ MAINTAINER James Beattie
 # Install Dependencies
 RUN apt-get -y update \
     && apt-get -y install git unzip zlib1g-dev tofrodos yui-compressor \
-    && jq ruby wget python python-pip curl wget jq
+    jq ruby wget python python-pip curl wget
 
 # Install AWS CLI
 RUN pip install awscli
