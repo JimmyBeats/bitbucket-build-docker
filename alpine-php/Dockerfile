@@ -3,7 +3,7 @@ FROM jimmybeats/alpine-php-nginx-base-container
 MAINTAINER James Beattie<jamesbeattie@gmail.com>
 
 # Install packages
-RUN apk --no-cache add git bash curl composer wget python py-pip jq \
+RUN apk --no-cache add git bash curl composer wget python3 py-pip jq \
     && pecl install xdebug-2.9.2 \
     && docker-php-ext-enable xdebug
 
