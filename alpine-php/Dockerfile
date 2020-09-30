@@ -17,6 +17,6 @@ RUN chmod +x phpunit
 
 # Install aws-cli
 RUN apk -Uuv add groff less py-pip
-RUN pip install awscli
+RUN pip install awscli urllib3
 RUN apk --purge -v del py-pip
 RUN rm /var/cache/apk/*
