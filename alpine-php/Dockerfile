@@ -4,7 +4,7 @@ MAINTAINER James Beattie<jamesbeattie@gmail.com>
 
 # Install packages
 RUN apk --no-cache add git bash curl composer wget python3 py-pip jq \
-    && pecl install xdebug-2.9.2 \
+    && pecl install xdebug-3.0.4 \
     && docker-php-ext-enable xdebug
 
 # Install Symfony CLI
